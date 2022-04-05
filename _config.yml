@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Huajun He / CV"
+title                    : "About Me"
 title_separator          : "-"
 name                     : &name "Huajun He"
 description              : &description "personal description"
