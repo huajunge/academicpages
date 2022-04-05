@@ -1,7 +1,7 @@
 ---
 title: "Discovering real-time reachable area using trajectory connections"
 collection: publications
-permalink: /publication/2020-09-24-reachable.md
+permalink: /publication/2020-09-24-reachable
 excerpt: 'This paper provides the first attempt to discover real-time reachable areas with real-time trajectories.'
 date: 2020-09-24
 venue: 'DASFAA'

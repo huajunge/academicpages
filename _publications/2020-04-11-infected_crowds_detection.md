@@ -1,7 +1,7 @@
 ---
 title: "Efficient suspected infected crowds detection based on spatio-temporal trajectories"
 collection: publications
-permalink: /publication/2020-04-11-infected_crowds_detection.md
+permalink: /publication/2020-04-11-infected_crowds_detection
 excerpt: 'we propose a novel spatio-temporal infected rate (IR) measure based on human moving trajectories that can adequately describe the risk of being infected by a given query trajectory of a patient.'
 date: 2020-04-11
 venue: 'arXiv'
