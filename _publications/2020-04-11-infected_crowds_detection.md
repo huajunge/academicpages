@@ -12,4 +12,4 @@ we propose a novel spatio-temporal infected rate (IR) measure based on human mov
 
 [Download paper here](https://huajunge.github.io/academicpages/files/Suspected_Infected_Crowds_Detection.pdf)
 
-He H, Li R, Wang R, et al. Efficient suspected infected crowds detection based on spatio-temporal trajectories[J]. arXiv preprint arXiv:2004.06653, 2020.
+<strong>He H</strong>, Li R, Wang R, et al. Efficient suspected infected crowds detection based on spatio-temporal trajectories[J]. arXiv preprint arXiv:2004.06653, 2020.

@@ -12,4 +12,4 @@ This paper provides the first attempt to discover real-time reachable areas with
 
 [Download paper here](https://huajunge.github.io/academicpages/files/DASFAA2020_ReachableArea.pdf)
 
-Li R, Bao J, He H, et al. Discovering real-time reachable area using trajectory connections[C]//International Conference on Database Systems for Advanced Applications. Springer, Cham, 2020: 36-53.
+Li R, Bao J, <strong>He H</strong>, et al. Discovering real-time reachable area using trajectory connections[C]//International Conference on Database Systems for Advanced Applications. Springer, Cham, 2020: 36-53. <strong>[DASFAA 2020].</strong>
