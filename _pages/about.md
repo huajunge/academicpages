@@ -12,7 +12,7 @@ Huajun He is a Ph.D. student at the School of Computer Science and Technology, S
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed%}
-    {post.id} {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  <ol>{% for post in site.publications reversed%}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ol>
   
