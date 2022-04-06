@@ -6,9 +6,10 @@ excerpt: 'This paper proposes TraSS, an efficient framework for trajectory simil
 date: 2022-03-23
 venue: 'ICDE'
 paperurl: 'https://huajunge.github.io/academicpages/files/ICDE_2021_XZ_cr_yl.pdf'
+citation: '<strong>Huajun He</strong>, Ruiyuan Li, Sijie Ruan, Tianfu He, Jie Bao, Tianrui Li, Yu Zheng. TraSS: Efficient Trajectory Similarity Search Based on Key-Value DataStores[C]//2022 IEEE 38th International Conference on Data Engineering (ICDE). IEEE, 2022. <strong>[ICDE 2022]</strong>.'
 ---
 This paper proposes TraSS, an efficient framework for trajectory similarity search in key-value data stores.
 
 [Download paper here](https://huajunge.github.io/academicpages/files/ICDE_2021_XZ_cr_yl.pdf)
 
-'<strong>Huajun He</strong>, Ruiyuan Li, Sijie Ruan, Tianfu He, Jie Bao, Tianrui Li, Yu Zheng. TraSS: Efficient Trajectory Similarity Search Based on Key-Value DataStores[C]//2022 IEEE 38th International Conference on Data Engineering (ICDE). IEEE, 2022. <strong>[ICDE 2022]</strong>.'
+<strong>Huajun He</strong>, Ruiyuan Li, Sijie Ruan, Tianfu He, Jie Bao, Tianrui Li, Yu Zheng. TraSS: Efficient Trajectory Similarity Search Based on Key-Value DataStores[C]//2022 IEEE 38th International Conference on Data Engineering (ICDE). IEEE, 2022. <strong>[ICDE 2022].</strong>
