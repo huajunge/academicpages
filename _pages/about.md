@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. student at the School of Computer Science and Technology, SWJTU University, China, under the supervision of Prof. [Yu Zheng](http://urban-computing.com/yuzheng) and [Tianrui Li](https://faculty.swjtu.edu.cn/litianrui/en/index.htm). I am now a research intern in JD Intelligent Cities Research and JD iCity, under the supervision of Dr. [Jie Bao](https://jie-bao.org). My research interests include urban computing, database, spatio-temporal data management, and distributed systems. 
+I am a Ph.D. student at the School of Computing andj Artificial Intelligence, SWJTU University, China, under the supervision of Prof. [Yu Zheng](http://urban-computing.com/yuzheng) and [Tianrui Li](https://faculty.swjtu.edu.cn/litianrui/en/index.htm). I am now a research intern in JD Intelligent Cities Research and JD iCity, under the supervision of Dr. [Jie Bao](https://jie-bao.org). My research interests include urban computing, database, spatio-temporal data management, and distributed systems. 
 
 Education
 ======
