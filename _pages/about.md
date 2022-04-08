@@ -22,13 +22,13 @@ HONORS AND AWARDS
 * 2021, Best Demo Paper Award, ACM SIGSPATIAL
 * 2021, Outstanding Intern, JD iCity
 * 2020, Outstanding Communist Youth League Member Award
-* 2019, 互联网+交通运输创新创业大赛，国家三等奖
+* 2019, 互联网+交通运输创新创业大赛，交通部，国家三等奖
 * 2019, Outstanding Graduate Student Award, SWJTU University
 * 2018, Outstanding Undergraduate Thesis
 * 2017, Special Scholarship, SWJTU University
-* 2017, 中国大学生节能减排科技竞赛，国家一等奖
-* 2017, 全国大学生服务外包创新创业大赛，国家二等奖
-* 2016, 全国大学生服务外包创新创业大赛，国家二等奖
+* 2017, 第十届全国大学生节能减排社会实践与科技竞赛，教育部，国家一等奖
+* 2017, 第七届中国大学生服务外包创新创业大赛，教育部、商务部，国家二等奖
+* 2016, 第六届中国大学生服务外包创新创业大赛，教育部、商务部，国家二等奖
 
 Publications
 ======
