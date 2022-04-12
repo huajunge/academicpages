@@ -5,10 +5,11 @@ type: "Handbook"
 permalink: /teaching/2021-JUST-Traj
 venue: "SIGSPATAIL"
 date: 2021-11-01
-video: ""
+video: "https://huajunge.github.io/academicpages/files/just-traj-new.mp4"
 ---
 
 This is a Handbook of JUST-Traj.
+
 
 
 <center>JUST-Traj: A Distributed and Holistic Trajectory Data Management System</center>
@@ -16,8 +17,6 @@ This is a Handbook of JUST-Traj.
 <center>HANDBOOK</center>
 
 
-
-[TOC]
 
 ## DEMONSTRATION (Video)
 

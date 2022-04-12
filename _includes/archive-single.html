@@ -59,6 +59,8 @@
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
-
+    {% if post.video %}
+      <video  controls="controls" src="{{ post.video }}" style="border-style:solid"></video>
+    {% endif %}
   </article>
 </div>
