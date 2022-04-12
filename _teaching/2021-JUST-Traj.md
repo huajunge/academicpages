@@ -28,8 +28,9 @@ This is a Handbook of JUST-Traj.
 
 ### Login
 
-1. We prepare a test account for the reviewers. UserName: JustTestUser, Password:JustTestUser!1
-2. Enter the login page: http://portal-just.urban-computing.cn/login
+1. We prepare a test account for the reviewers. 
+   UserName: JustTestUser, Password:JustTestUser!1
+2. Enter the login page: <a>http://portal-just.urban-computing.cn/login</a>
 3. Enter the User Name (JustTestUser) and Password (JustTestUser!1), then click the button Login, as shown in the following picture.
 
 <img src="https://huajunge.github.io/academicpages/images/tec/just-traj/login.png" alt="login" style="zoom:50%;" />
