@@ -32,7 +32,7 @@ JUST-团队 何华均
 
 空间填充曲线是一种降低空间维度的技术，是由意大利科学家皮亚诺于1890年首次构造出来的，并由希尔伯特于1891年正式提出的，之后空间填充曲线就得到了深入的研究和广泛的应用[5]。空间填充曲线将高维空间数据映射到一维空间，并利用转换后的索引值存储和查询数据。空间填充曲线通过有限次的递归操作将多维空间划分为众多的网格（如图1所示），再通过一条连续的曲线经过所有的网格。
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image002.png)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image002.png)
 
 图1、空间网格
 
@@ -52,11 +52,11 @@ JUST-团队 何华均
 
  
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image004.jpg)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image004.jpg)
 
 图2、Z曲线示意图
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image006.png)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image006.png)
 
 图3、数值化
 
@@ -64,13 +64,13 @@ JUST-团队 何华均
 
  
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image008.jpg)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image008.jpg)
 
 图4、Hilbert曲线示意图
 
  
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image010.png)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image010.png)
 
 图5、Hilbert曲线的四种变化
 
@@ -80,15 +80,15 @@ JUST-团队 何华均
 
 空间数据除了点类型，还有大量的空间扩展对象，如线和多边形。它们通常具有长度、面积等属性。因此，不能被一个经纬度唯一表示。Z曲线和Hibert曲线最终得到的编码只能表示处于最大分辨率的网格。然而，一个空间扩展对象很可能会与多个最小网格相交，因此Z曲线和Hibert曲线都不能用唯一的编码值来表示它。为了利用空间填充曲线来表示空间扩展对象，最简单的方法是用所有与空间扩展对象相交的网格的对应编码表示它，然后将它拷贝多次并存储在每一个编码下。明显地，这种方法会带来额外的存储开销，并且在查询时需要时间执行去重操作。XZ-Ordering解决了上面提到的问题。它扩展Z曲线，提出了一个放大元素的概念。它固定住Z曲线每一个子空间的左下角，然后将其长和高都扩大一倍得到更大的索引空间，得到的索引空间称作扩大元素。如图6（c）中，子空间“00”被扩张到了“0”所覆盖的子空间，“303”扩张为由“303”、“312”、“321”、“330”这四个子空间组成的索引区域。最终，XZ-Ordering利用恰好能完全包含多边形的放大元素来表示多边形，如O1被“303”的扩大元素表示，O1和O3被“00”的扩大元素表示。
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image012.png)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image012.png)
 
 图6、XZ-Ordering示意图
 
  
 
-由于XZ-Ordering使用到了不同分辨率的索引空间表示多边形对象，因此它的索引空间数量不只是最大分辨率的网格数量。因为，分辨率每增加一次，Z曲线的每个子空间都会分裂出四个新的子空间，而每个子空间也可以扩展为XZ-Ordering的扩大元素。因此，XZ-Ordering拥有个![img](https://huajunge.github.io/academicpages/images/索引/clip_image014.png)个处于分辨率*i*的索引空间。进而，它能表示的所有索引空间的数量为不同分辨率下的索引空间数量的累加值。XZ-Ordering实际能表示的索引空间数量为：
+由于XZ-Ordering使用到了不同分辨率的索引空间表示多边形对象，因此它的索引空间数量不只是最大分辨率的网格数量。因为，分辨率每增加一次，Z曲线的每个子空间都会分裂出四个新的子空间，而每个子空间也可以扩展为XZ-Ordering的扩大元素。因此，XZ-Ordering拥有个![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image014.png)个处于分辨率*i*的索引空间。进而，它能表示的所有索引空间的数量为不同分辨率下的索引空间数量的累加值。XZ-Ordering实际能表示的索引空间数量为：
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image016.png)+![img](https://huajunge.github.io/academicpages/images/索引/clip_image018.png)，
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image016.png)+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image018.png)，
 
 其中，*l*表示最大分辨率。
 
@@ -96,7 +96,7 @@ JUST-团队 何华均
 
 XZ-Ordering同样会用一个整数来表示索引空间，并且尽量满足空间相近的索引空间具有相近的整数值。它的数值化思路可以理解为一种深度优先编码，如图7所示，为XZ-Ordering最大分辨率为2时的编码。先从第0层开始编码为0，然后再按照深度优先访问的顺序编码，如先编码第1层中子空间序号为“0”的空间为1，再编码“00”子空间为2。当编码完“0”开头的所有索引空间后，回退到上一层，再开始编码上一层为“1”的空间为6，再深度编码“1”下面所有的索引空间。
 
-![img](https://huajunge.github.io/academicpages/images/索引/clip_image020.png)
+![img](https://huajunge.github.io/academicpages/images/posts/索引/clip_image020.png)
 
 图7、XZ-Ordering最大分辨率为2时的编码
 
