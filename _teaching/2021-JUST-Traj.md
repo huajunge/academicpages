@@ -356,7 +356,7 @@ from
 
 Lines from 7 to 9 take a *ID Temporal* query to extract trajectories from the database. Lines from 1 to 3 execute the *Noise Filtering* operation on the extracted trajectories.
 
-![image-20210601200416279](images/image-20210601200416279.png)
+![image-20210601200416279](https://huajunge.github.io/academicpages/images/tec/just-traj/image-20210601200416279.png)
 
 <center>Figure 3: Cleaned Trajectories of '1192408782'.</center>
 
@@ -384,7 +384,7 @@ WHERE
 
 Results
 
-![image-20210727101710204](images/image-20210727101710204.png)
+![image-20210727101710204](https://huajunge.github.io/academicpages/images/tec/just-traj/image-20210727101710204.png)
 
 
 
@@ -394,7 +394,7 @@ Results
 
 The DB Driver is a Java-based API for accessing JUST-Traj DB. It complies with the JDBC specification, implements most of the interfaces, and extends some space-time attributes.  Users can download the just-drive-java.jar from http://nexus.cbpmgt.com/nexus/#nexus-search;quick~just-driver-java.
 
-![image-20210726180740968](images/image-20210726180740968.png)
+![image-20210726180740968](https://huajunge.github.io/academicpages/images/tec/just-traj/image-20210726180740968.png)
 
 ### Quick Start
 
