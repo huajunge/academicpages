@@ -39,7 +39,7 @@
     {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
     {% if post.video %}
-      <video  controls="controls" src="{{ base_path }}{{ post.video }}" style="border-style:solid"></video>
+      <video  controls="controls" src="{{ base_path }}{{ post.video }}" width="888" style="border-style:solid"></video>
     {% endif %}
   </article>
 </div>
