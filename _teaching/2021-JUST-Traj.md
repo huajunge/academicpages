@@ -91,7 +91,7 @@ where
 
 
 ```sql
-SELECT * FROM traj_table
+SELECT  traj_oid(traj) id, traj_startTime(traj) st,traj_endTime(traj) ed,traj_linestring(traj) FROM traj_table
 WHERE st_within(traj_linestring(traj), st_makeBBox(113.0, 23.0, 113.5, 23.6))
   and traj_startTime(traj) >= '2014-03-13 07:04:51'
   and traj_endTime(traj) <= '2014-03-16 08:04:51';
@@ -101,7 +101,7 @@ WHERE st_within(traj_linestring(traj), st_makeBBox(113.0, 23.0, 113.5, 23.6))
 
 
 ```sql
-SELECT * FROM traj_table
+SELECT traj_oid(traj) id, traj_startTime(traj) st,traj_endTime(traj) ed,traj_linestring(traj) FROM traj_table
 WHERE 
   traj_oid(traj) = '1003'
   and traj_startTime(traj) >= '2013-07-03 14:33:27'
@@ -112,7 +112,7 @@ WHERE
 
 ```sql
 select
-  *
+  traj_oid(traj) id, traj_startTime(traj) st,traj_endTime(traj) ed,traj_linestring(traj)
 from
   traj_table
 where
@@ -130,7 +130,7 @@ where
 
 ```sql
 SELECT
-  *
+  traj_oid(traj) id, traj_startTime(traj) st,traj_endTime(traj) ed,traj_linestring(traj)
 FROM
   traj_table
 WHERE
@@ -152,6 +152,10 @@ JUST-Traj supports many out-of-the-box analyses on trajectories, which facilitat
 
 ```sql
 SELECT
+  traj_linestring(aa.item)
+from
+  (
+SELECT
   st_trajnoisefilter(
      traj,
     '{ "filterType": "COMPLEX_FILTER",
@@ -164,12 +168,16 @@ SELECT
   )
 FROM
   traj_table
-LIMIT 1000
+LIMIT 1000) as aa
 ```
 
 (2) Segmentation
 
 ```sql
+SELECT
+  traj_linestring(aa.item)
+from
+  (
 SELECT st_trajSegmentation(traj,
     '{ "maxTimeIntervalInMinute": 10,
       "maxStayDistInMeter": 100,
@@ -179,7 +187,7 @@ SELECT st_trajSegmentation(traj,
     }'
   )
 FROM traj_table
-LIMIT 1000
+LIMIT 1000) as aa
 ```
 
 (3) Interpolation
@@ -188,10 +196,26 @@ LIMIT 1000
 SELECT st_freespaceInterpolation(
     traj, 30)
 FROM traj_table
-LIMIT 100
+LIMIT 100 
 ```
 
-(4) MapMatching
+(4) Aggregation. JUST-Traj provides many aggregation operations, e.g., $max()$, $min()$, $count()$; For example,
+
+```sql
+SELECT count(*) FROM traj_table;
+```
+
+(5) Stay Point Detection. Moving objects tend to stay due to certain events, such as vehicles staying for refueling, couriers staying for delivery. By analyzing the place that a mobile object stays, we can infer to some places of interesting, e.g., the delivery address;
+
+```sql
+SELECT st_trajStayPoint(traj,
+  '{ "maxStayDistInMeter": 10,
+     "minStayTimeInSecond": 60}')
+FROM
+  traj_table
+LIMIT 1000
+```
+(6) MapMatching
 
 create a trajectory table for MapMatching
 
@@ -261,24 +285,6 @@ FROM
   mm_traj t1,
  (SELECT st_makeRoadNetwork(collect_list(road))as t FROM longgang_expand_rn) AS t2
 ```
-
-**Aggregation**. JUST-Traj provides many aggregation operations, e.g., $max()$, $min()$, $count()$; For example,
-
-```sql
-SELECT count(*) FROM traj_table;
-```
-
-**Stay Point Detection.** Moving objects tend to stay due to certain events, such as vehicles staying for refueling, couriers staying for delivery. By analyzing the place that a mobile object stays, we can infer to some places of interesting, e.g., the delivery address;
-
-```sql
-SELECT st_trajStayPoint(traj,
-  '{ "maxStayDistInMeter": 10,
-     "minStayTimeInSecond": 60}')
-FROM
-  traj_table
-LIMIT 1000
-```
-
 ### Holistic Solutions
 
 **Spatio-temporal Query and Stay Point Detection** 
