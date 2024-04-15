@@ -22,15 +22,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ol>
 
- <script src="https://utteranc.es/client.js"
-          repo="huajunge/academicpages"
-          issue-term="title"
-          label="comments"
-          theme="github-light"
-          crossorigin="anonymous"
-          async>
-  </script>
-
 HONORS AND AWARDS
 ======
 * 2022, Innovation Patent Award, JD iCity
@@ -44,3 +35,14 @@ HONORS AND AWARDS
 * 2017, 第十届全国大学生节能减排社会实践与科技竞赛，教育部，国家一等奖
 * 2017, 第七届中国大学生服务外包创新创业大赛，教育部、商务部，国家二等奖
 * 2016, 第六届中国大学生服务外包创新创业大赛，教育部、商务部，国家二等奖
+
+Message Board
+======
+ <script src="https://utteranc.es/client.js"
+          repo="huajunge/academicpages"
+          issue-term="title"
+          label="comments"
+          theme="github-light"
+          crossorigin="anonymous"
+          async>
+  </script>
