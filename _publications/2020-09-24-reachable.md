@@ -6,7 +6,7 @@ excerpt: 'This paper provides the first attempt to discover real-time reachable 
 date: 2020-09-24
 venue: 'DASFAA'
 paperurl: 'https://huajunge.github.io/academicpages/files/DASFAA2020_ReachableArea.pdf'
-citation: 'Li R, Bao J, <strong>He H</strong>, et al. Discovering real-time reachable area using trajectory connections[C]//International Conference on Database Systems for Advanced Applications. Springer, Cham, 2020: 36-53. <strong>[DASFAA 2020].</strong>'
+citation: 'Li R, Bao J, <strong>He H</strong>, et al. Discovering real-time reachable area using trajectory connections[C]//International Conference on Database Systems for Advanced Applications. Springer, Cham, 2020: 36-53.'
 ---
 [Download paper here](https://huajunge.github.io/academicpages/files/DASFAA2020_ReachableArea.pdf)
 
@@ -14,4 +14,4 @@ Abstract: Discovering real-time reachable areas of a specified location is of im
 
 ![image-20220406203448544](https://huajunge.github.io/academicpages/images/reachable.png)
 
-Li R, Bao J, <strong>He H</strong>, et al. Discovering real-time reachable area using trajectory connections[C]//International Conference on Database Systems for Advanced Applications. Springer, Cham, 2020: 36-53. <strong>[DASFAA 2020].</strong>
+Li R, Bao J, `<strong>`He H`</strong>`, et al. Discovering real-time reachable area using trajectory connections[C]//International Conference on Database Systems for Advanced Applications. Springer, Cham, 2020: 36-53. `<strong>`[DASFAA 2020].`</strong>`
