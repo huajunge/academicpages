@@ -14,4 +14,4 @@ Abstract: Similarity search has recently become an integral part of many traject
 
 ![image-20220406191310694](https://huajunge.github.io/academicpages/images/trass.png)
 
-`<strong>`Huajun He`</strong>`, Ruiyuan Li, Sijie Ruan, Tianfu He, Jie Bao, Tianrui Li, Yu Zheng. TraSS: Efficient Trajectory Similarity Search Based on Key-Value DataStores[C]//2022 IEEE 38th International Conference on Data Engineering (ICDE). IEEE, 2022. `<strong>`[ICDE 2022].`</strong>`
+**Huajun He**, Ruiyuan Li, Sijie Ruan, Tianfu He, Jie Bao, Tianrui Li, Yu Zheng. TraSS: Efficient Trajectory Similarity Search Based on Key-Value DataStores[C]//2022 IEEE 38th International Conference on Data Engineering (ICDE). IEEE, 2022.
