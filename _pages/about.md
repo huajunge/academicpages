@@ -26,6 +26,7 @@ Publications
 HONORS AND AWARDS
 =================
 
+* 2024, 西南交通大学优秀毕业生
 * 2022, Innovation Patent Award, JD iCity
 * 2021, Best Demo Paper Award, ACM SIGSPATIAL
 * 2021, Outstanding Intern, JD iCity
