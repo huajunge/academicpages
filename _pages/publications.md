@@ -13,6 +13,6 @@ author_profile: true
 
 ============
 
-<ol>{% for post in site.publications reversed %}
+{% for post in site.publications reversed %}
   {% include archive-single.html %}
-{% endfor %}</ol>
+{% endfor %}
