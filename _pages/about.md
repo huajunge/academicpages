@@ -12,9 +12,9 @@ Dr. Huajun He is currently a researcher in Tencent. His primary responsibility i
 Education
 =========
 
-* B.S. in SWJTU University, 2014-2018
-* M.S. in SWJTU University, 2018-2020
 * Ph.D in SWJTU University, 2020-2024
+* M.S. in SWJTU University, 2018-2020
+* B.S. in SWJTU University, 2014-2018
 
 Publications
 ============
@@ -33,7 +33,7 @@ HONORS AND AWARDS
 * 2020, Outstanding Communist Youth League Member Award
 * 2019, 互联网+交通运输创新创业大赛，交通部，国家三等奖
 * 2019, Outstanding Graduate Student Award, SWJTU University
-* 2018, Outstanding Undergraduate Thesis
+* 2018, Outstanding Undergraduate Thesis (优秀本科毕业论文)
 * 2017, Special Scholarship, SWJTU University
 * 2017, 第十届全国大学生节能减排社会实践与科技竞赛，教育部，国家一等奖
 * 2017, 第七届中国大学生服务外包创新创业大赛，教育部、商务部，国家二等奖
