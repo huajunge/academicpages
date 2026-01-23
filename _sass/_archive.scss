@@ -266,3 +266,78 @@
     }
   }
 }
+
+
+/*
+   Publication Layout
+   ========================================================================== */
+
+.publication-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 1.5em;
+  
+  .publication-image {
+    flex: 0 0 120px;
+    margin-right: 1.5em;
+    
+    .publication-teaser {
+      width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+      object-fit: cover;
+    }
+  }
+  
+  .publication-content {
+    flex: 1;
+    
+    .publication-title {
+      font-size: $type-size-6;
+      font-weight: bold;
+      margin-bottom: 0.25em;
+      line-height: 1.2;
+    }
+    
+    .publication-authors {
+      font-size: $type-size-7;
+      margin-bottom: 0.25em;
+      line-height: 1.2;
+      color: $text-color;
+    }
+    
+    .publication-venue {
+      font-size: $type-size-7;
+      margin-bottom: 0.5em;
+      line-height: 1.2;
+      color: $muted-text-color;
+      font-style: italic;
+    }
+    
+    .publication-links {
+      font-size: $type-size-7;
+      
+      a {
+        text-decoration: none;
+        color: $link-color;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  @include breakpoint($small) {
+    .publication-image {
+      flex: 0 0 150px;
+    }
+  }
+  
+  @include breakpoint($medium) {
+    .publication-image {
+      flex: 0 0 180px;
+    }
+  }
+}

@@ -6,6 +6,7 @@ excerpt: 'we propose a novel spatio-temporal infected rate (IR) measure based on
 date: 2020-04-11
 venue: 'arXiv'
 paperurl: 'https://huajunge.github.io/academicpages/files/Suspected_Infected_Crowds_Detection.pdf'
+image: 'https://huajunge.github.io/academicpages/images/infected.png'
 citation: '<strong>He H</strong>, Li R, Wang R, et al. Efficient suspected infected crowds detection based on spatio-temporal trajectories[J]. arXiv preprint arXiv:2004.06653, 2020.'
 ---
 [Download paper here](https://huajunge.github.io/academicpages/files/Suspected_Infected_Crowds_Detection.pdf)
