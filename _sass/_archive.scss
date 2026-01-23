@@ -60,11 +60,32 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: $type-size-7;
 
   & + p {
     text-indent: 0;
   }
+}
+
+.archive__item-authors {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+  font-size: $type-size-7;
+  color: $text-color;
+}
+
+.archive__item-venue {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  font-size: $type-size-7;
+  color: $muted-text-color;
+  font-style: italic;
+}
+
+.archive__item-link {
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  font-size: $type-size-7;
 }
 
 .archive__item-teaser {
@@ -149,9 +170,8 @@
 
     .archive__item-excerpt {
       display: block;
-      font-size: $type-size-6;
-    }
-  }
+      font-size: $type-size-7;
+    }  }
 }
 
 

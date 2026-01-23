@@ -27,16 +27,16 @@
       </div>
     {% endif %}
     <h3 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-      <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-     <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a> <span>[{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}]</span>
-      {% endif %}
+      <strong>{{ title }}</strong>
     </h3>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+    <p class="archive__item-authors">{{ post.citation | split: '(' | first | strip }}</p>
+    <p class="archive__item-venue">{{ post.venue }}, {{ post.date | default: "1900-01-01" | date: "%Y" }}</p>
+    {% if post.paperurl %}
+      <p class="archive__item-link"><a href="{{ post.paperurl }}">[pdf][Paper Link]</a></p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.excerpt %}
+      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt }}</p>
+    {% endif %}
     </li>
  </article>
 </div>
