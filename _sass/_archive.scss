@@ -42,7 +42,7 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
-  font-size: $type-size-8;
+  font-size: $type-size-6;
 
   a + a {
     opacity: 0.5;
@@ -60,7 +60,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-9;
+  font-size: $type-size-6;
 
   & + p {
     text-indent: 0;
@@ -91,6 +91,8 @@
    ========================================================================== */
 
 .list__item {
+  margin-bottom: 0.5em;
+  
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }
