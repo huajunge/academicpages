@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Dr. Huajun He is currently a researcher in Tencent. His primary responsibility is to manage large amounts of time-serises data efficiently. He got his Ph.D. degree in the School of Computing and Artificial Intelligence, SWJTU University, China, under the supervision of Prof. [Yu Zheng](http://urban-computing.com/yuzheng) and [Tianrui Li](https://faculty.swjtu.edu.cn/litianrui/en/index.htm). He was a research intern in JD Intelligent Cities Research and JD iCity, under the supervision of Dr. [Jie Bao](https://jie-bao.org). His research interests include urban computing, database, spatio-temporal data management, and distributed systems.
+Dr. Huajun He is currently a Research Scientist at Tencent. His primary research focuses on the design of efficient vector databases and Data Agentic Systems, with a particular emphasis on Memory Systems. He obtained his Ph.D. degree from the School of Computing and Artificial Intelligence at Southwest Jiaotong University (SWJTU), China, under the joint supervision of Prof. [Yu Zheng](http://urban-computing.com/yuzheng) and Prof. [Tianrui Li](https://faculty.swjtu.edu.cn/litianrui/en/index.htm). Previously, he served as a research intern at JD Intelligent Cities Research, advised by Dr. [Jie Bao](https://jie-bao.org). His research interests include Urban Computing, Vector Indexing, LLMs, Spatio-Temporal Data Management, and Distributed Systems.
 
 Education
 =========
