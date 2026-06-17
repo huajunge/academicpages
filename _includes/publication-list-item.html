@@ -1,0 +1,39 @@
+{% include base_path %}
+
+{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign publication_year = post.date | default: "1900-01-01" | date: "%Y" %}
+{% assign paper_url = post.paperurl | default: "" | strip %}
+
+<li class="publication-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+  <article class="publication-entry">
+    <div class="publication-entry__meta">
+      {% if post.venue %}
+        <span class="publication-entry__venue">{{ post.venue }}</span>
+      {% endif %}
+      <span class="publication-entry__year">{{ publication_year }}</span>
+    </div>
+
+    <h3 class="publication-entry__title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </h3>
+
+    {% if post.citation %}
+      <p class="publication-entry__citation" itemprop="citation">
+        {{ post.citation | markdownify | remove: "<p>" | remove: "</p>" }}
+      </p>
+    {% endif %}
+
+    <div class="publication-entry__links">
+      {% if paper_url != "" %}
+        <a class="publication-entry__link" href="{{ paper_url }}">
+          <i class="fas fa-download" aria-hidden="true"></i>
+          <span>Download</span>
+        </a>
+      {% endif %}
+      <a class="publication-entry__link" href="{{ base_path }}{{ post.url }}" rel="permalink">
+        <i class="fas fa-link" aria-hidden="true"></i>
+        <span>Details</span>
+      </a>
+    </div>
+  </article>
+</li>

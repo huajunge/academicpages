@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-Dr. Huajun He is currently a Research Scientist at Tencent. His primary research focuses on the design of efficient vector databases and Data Agentic Systems, with a particular emphasis on Memory Systems. He obtained his Ph.D. degree from the School of Computing and Artificial Intelligence at Southwest Jiaotong University (SWJTU), China, under the joint supervision of Prof. [Yu Zheng](http://urban-computing.com/yuzheng) and Prof. [Tianrui Li](https://faculty.swjtu.edu.cn/litianrui/en/index.htm). Previously, he served as a research intern at JD Intelligent Cities Research, advised by Dr. [Jie Bao](https://jie-bao.org). His research interests include Urban Computing, Vector Indexing, LLMs, Spatio-Temporal Data Management, and Distributed Systems.
+Dr. Huajun He is currently a Distinguished Associate Research Fellow at Southwest Jiaotong University (SWJTU), China. Prior to his appointment at SWJTU, he was a Research Scientist at Tencent and held a research internship at JD Intelligent Cities Research. His research interests include Urban Computing, Vector Indexing, LLMs, Data Agentic Systems, Memory Systems, Spatio-Temporal Data Management, and Distributed Systems.
 
 Education
 =========
@@ -49,4 +49,4 @@ Message Board
           theme="github-light"
           crossorigin="anonymous"
           async>
-  </script>
+</script>
